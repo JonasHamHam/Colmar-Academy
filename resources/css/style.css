@@ -40,21 +40,35 @@ nav {
 
 nav a {
     margin: 0px 8px 0px 8px;
+    color: #404142;
+    text-decoration: none;
+    transition: color 100ms ease-in 0ms;
+}
+
+nav a:hover {
+    color: grey;
 }
 
 body {
     background-color: lightgrey;
 }
 
-@media only screen and (min-width: 650px)
+.navigationmobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 16px 0px 16px;
+}
+
+@media only screen and (min-width: 807px)
 {
-    .navigationmobile img {
+    .navigationmobile {
         display: none;
     }
     
 }
 
-@media only screen and (max-width: 650px)
+@media only screen and (max-width: 807px)
 {
     .navigation {
         display: none;
@@ -86,6 +100,7 @@ body {
 
 .learn-text {
     margin: auto 24px;
+    width: 100%;
 }
 
 .learn h1 {
@@ -96,11 +111,17 @@ body {
     margin: 40px 0px 40px 0px;
 }
 
-.learn p {
-    color: white;
+.learn-text a {
+    width: 200px;color: white;
+    text-decoration: none;
     background-color: #404142;
-    padding: 16px 0px 16px 0px;
+    padding: 5% 30% 5% 30%;
     text-align: center;
+    transition: background-color 100ms ease-in 0ms;
+}
+
+.learn-text a:hover {
+    background-color: grey;
 }
 
 @media only screen and (max-width: 807px)
@@ -161,7 +182,13 @@ body {
 }
 
 .information-text a {
-    color: rgb(64, 147, 224);
+    color: #407ff5;
+    text-decoration: none;
+    transition: color 100ms ease-in 0ms;
+}
+
+.information-text a:hover {
+    color: #66d1ff;
 }
 
 #information-banner {
