@@ -60,7 +60,7 @@ body {
     margin: 0px 16px 0px 16px;
 }
 
-@media only screen and (min-width: 807px)
+@media only screen and (min-width: 808px)
 {
     .navigationmobile {
         display: none;
@@ -112,10 +112,12 @@ body {
 }
 
 .learn-text a {
-    width: 200px;color: white;
+    display: inline-block;
+    color: white;
     text-decoration: none;
     background-color: #404142;
-    padding: 5% 30% 5% 30%;
+    width: 90%;
+    padding: 16px 0px 16px 0px;
     text-align: center;
     transition: background-color 100ms ease-in 0ms;
 }
@@ -124,23 +126,53 @@ body {
     background-color: grey;
 }
 
+.learn-text-mobile {
+    margin: 0px 16px 32px 16px;
+    text-align: center;
+}
+
+.learn-text-mobile h1 {
+    font-size: 36px;
+}
+
+.learn-text-mobile a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #404142;
+    width: 100%;
+    padding: 16px 0px 16px 0px;
+    text-align: center;
+    transition: background-color 100ms ease-in 0ms;
+}
+
+.learn-text-mobile a:hover {
+    background-color: grey;
+}
+
+@media only screen and (min-width: 808px)
+
+{
+    .learn-text-mobile {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 807px)
 {
-    .learn {
-        display: block;
-        width: 100%;
-    }
-
     #learn-banner {
         width: 100%;
         height: 100%;
         margin: 0px 0px 32px 0px;
     }
- 
+
     .learn-text {
-        margin: 32px 16px 32px 16px;
+        display: none;
     }
 
+    .learn {
+        display: block;
+    }
 }
 
 /* PRACTICE SECTION */
@@ -206,7 +238,7 @@ body {
     height: 100%;
 }
 
-@media only screen and (min-width: 807px)
+@media only screen and (min-width: 808px)
 {
     .information-img-mobile {
         display: none;
@@ -283,7 +315,7 @@ body {
     width: 100%;
 }
 
-@media only screen and (min-width: 807px)
+@media only screen and (min-width: 808px)
 {
     .learning-parent .mobile {
         display: none;
@@ -381,7 +413,7 @@ li {
     margin-top: 32px;
 }
 
-@media only screen and (min-width: 807px)
+@media only screen and (min-width: 808px)
 {
     .mobile-video {
         display: none;
